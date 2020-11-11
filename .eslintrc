@@ -1,0 +1,34 @@
+{
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "extends": [
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "prettier/react",
+    "prettier/standard",
+    "react-app"
+  ],
+  "rules": {
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "tabWidth": 2,
+        "useTabs": false,
+        "semi": true,
+        "arrowParens": "avoid",
+        "singleQuote": true
+      }
+    ]
+  },
+  "plugins": ["prettier", "react", "react-hooks"],
+  "env": {
+    "jest": true,
+    "browser": true
+  }
+}
